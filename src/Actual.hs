@@ -68,14 +68,12 @@ instance Functor (Cont r) where
 
 instance Applicative (Cont r) where
   -- pure = Cont . flip ($)
-  pure = Cont . flip ($)
+  pure = undefined
   cf <*> cx = undefined
 
 instance Monad (Cont r) where
   (>>=) :: Cont r a -> (a -> Cont r b) -> Cont r b
-  cx >>= f = Cont $ \k ->
-    runCont cx $ \x ->
-      runCont (f x) k
+  cx >>= f = undefined
 
 -- }}}
 
