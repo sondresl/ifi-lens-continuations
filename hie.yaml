@@ -1,0 +1,13 @@
+cradle:
+  stack:
+    - path: "./src"
+      component: "IfiLensCont:lib"
+
+    - path: "./app/Main.hs"
+      component: "IfiLensCont:exe:IfiLensCont-exe"
+
+    - path: "./app/Paths_IfiLensCont.hs"
+      component: "IfiLensCont:exe:IfiLensCont-exe"
+
+    - path: "./test"
+      component: "IfiLensCont:test:IfiLensCont-test"
